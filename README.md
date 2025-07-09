@@ -7,7 +7,6 @@ This image contains pre-installed ARM cross-compilation tools from [wzaldivararm
 **What this was:** Alpine base images with QEMU ARM emulation tools pre-installed  
 **What you should use now:** Native Docker multi-platform builds
 
-dockerfile
 ```
 # Modern approach - no special base images needed
 FROM --platform=$TARGETPLATFORM alpine:latest
@@ -16,7 +15,6 @@ FROM --platform=$TARGETPLATFORM alpine:latest
 
 **Historical usage** (if you're curious):
 
-dockerfile
 ```
 FROM wzaldivararmhf/alpine-base-armhf
 RUN ["cross-build-start"]
